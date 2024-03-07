@@ -13,8 +13,8 @@ const Login = () => {
     setLoading(true);
     setError('');
 
-    // Replace this URL with your actual login API endpoint
-    const response = await fetch('https://yourapi.com/login', {
+    // Login API endpoint
+    const response = await fetch('http://localhost:5000/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -89,19 +89,3 @@ const Login = () => {
 };
 
 export default Login;
-
-// import React from 'react';
-
-
-// const Login = () => {
-//   return (
-//     <>
-//     <div style={{ width: '200px', height: '200px', backgroundColor: 'lightblue', border: '1px solid black' }}>
-//       This is a div box.
-//     </div>
-
-//     </>
-//   );
-// }
-
-// export default Login;
